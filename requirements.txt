@@ -8,4 +8,4 @@ djangorestframework
 jwt
 djangorestframework-simplejwt
 heroku
-djabgo-heroku
+django-heroku
