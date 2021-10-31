@@ -7,7 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ('name','email','password')
 
 class BookingSerializer(serializers.ModelSerializer):
-    datetime = fields.DateTimeField(input_formats=['%m/%d/%Y %H:%M %p'])
+    datetime = fields.DateTimeField(input_formats=['%Y/%m/%d %I:%M %p'])
     class Meta:
         model = Booking
         fields = '__all__'
