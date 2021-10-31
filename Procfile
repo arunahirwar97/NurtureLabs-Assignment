@@ -1,1 +1,1 @@
-web: gunicorn nltask.wsgi --log-file -
+web: gunicorn nltask.wsgi 
