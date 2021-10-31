@@ -1,11 +1,3 @@
-Django
-whitenoise
-psycopg2
-dj-database-url
+django
 gunicorn
-django-extensions
-djangorestframework
-jwt
-djangorestframework-simplejwt
-heroku
 django-heroku

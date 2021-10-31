@@ -1,1 +1,1 @@
-web: gunicorn nltask.wsgi 
+web: gunicorn nltask.wsgi
