@@ -1,3 +1,10 @@
 django
 gunicorn
 django-heroku
+whitenoise
+gunicorn
+djangorestframework-jwt
+djangorestframework 
+dj-database-url
+djangorestframework-simplejwt
+jwt
