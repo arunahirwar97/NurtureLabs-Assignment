@@ -91,6 +91,7 @@ class ListBookingsView(APIView):
         try:
             booking = Booking.objects.all().filter(user=user_id)
             serialized_data = BookingSerializer(booking, many=True)
+            print(booking)
             response = []
             for obj in serialized_data.data:
                 advisor = Advisor.objects.all().filter(id=obj["advisor"])[0]
@@ -98,8 +99,8 @@ class ListBookingsView(APIView):
                     "booking_id": obj["id"],
                     "booking_time": obj["datetime"],
                     "advisor_id": advisor.id,
-                    "advisor_name": advisor.name,
-                    "advisor_profile_url": advisor.profile_url,
+                    "advisor_name": advisor.Advisor_name,
+                    "advisor_profile_url": advisor.advisor_img_url,
                 }
                 response.append(newObj)
 
